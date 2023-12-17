@@ -1,0 +1,82 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+  background-color: #2a5298;
+}
+
+.navbar {
+  
+  background: linear-gradient( #1e3c72, #2a5298);
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar__brand {
+   
+    font-size: 24px;
+    text-align: center;
+   
+  }
+  
+  .navbar__menu-icon {
+    cursor: pointer;
+    color: white;
+    margin-top: 254px;
+    
+  }
+  
+  .navbar__side-menu {
+    top: 0px;
+    display: flex;
+    position: absolute;
+    left: -100%; /* Initially hide the menu off-screen */
+    width: 100%; /* Adjust as needed */
+    height: 90%;
+    background: linear-gradient( #1e3c72, #2a5298);
+    color: white;
+    transition: left 0.3s ease;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .navbar__side-menu.show {
+    left: 0; /* Show the menu */
+  }
+  
+/* ... (previous styles remain unchanged) */
+
+
+
+/* Style the side menu content as needed */
+.navbar__side-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  width: 100%; /* Take up full width */
+}
+
+.navbar__side-menu ul li {
+  position: relative; /* Positioning context for pseudo-element */
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  margin: 40px;
+}
+
+
+
+/* Add this to your CSS file */
+.hovered-item-background {
+  position: fixed;
+  bottom: 30%;
+  color: white; /* Text color */
+  font-size: 23em; /* Font size */
+  padding: 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  opacity: 20%;
+}
+

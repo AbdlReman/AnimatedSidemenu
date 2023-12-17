@@ -1,11 +1,9 @@
-// import BasicUseEffect from "./useEffect/BasicUseEffect";
-import Window from "./windowSize/Window";
+import Navbar from "./navbar/Navbar";
 
 function App() {
   return (
     <>
-      <Window />
-      {/* <BasicUseEffect /> */}
+      <Navbar />
     </>
   );
 }
